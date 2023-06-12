@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../JS/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#box').css({
+                width : 200,
+                height : 200,
+                backgroundColor : 'blue'
+                    })
+                    .on('click', function(){
+                        //#box 안에 있는 문장이기에 this 를 사용하면 된다
+                        $(this).css('backgroundColor', 'aqua')
+                    })
+                    .on('mouseenter', function(){
+                        //#box 안에 있는 문장이기에 this 를 사용하면 된다
+                        $(this).css('backgroundColor', 'green')
+                    })
+                    .on('mouseleave', function(){
+                        //#box 안에 있는 문장이기에 this 를 사용하면 된다
+                        $(this).css('backgroundColor', 'brown')
+                    });
+        })
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
